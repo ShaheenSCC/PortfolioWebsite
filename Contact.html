@@ -1,0 +1,66 @@
+<!-- 
+Student Name: Shaheen Murad
+Student ID: 0882541
+Date: July 2 2025
+Final Project  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><figure>
+          <img src="./Images/Logo.png" alt="Shaheen's Logo">
+        </figure></li>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About me</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+<main>
+  <form action="contact.php" method="post">
+    <h2>Contact Me</h2>
+    <div class="form_row">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required >
+    </div>
+    <div class="form_row">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required >
+    </div>
+    <div class="form_row">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+    </div>
+    <div class="form_row button">
+    <input type="submit" value="Submit" >
+    </div>
+    <div class="form_row button">
+    <input type="reset" value="Clear" >
+    </div>
+    
+  </form>
+</main>
+
+  <footer>
+  <ul>
+  <!-- Logo -->
+        <li><figure>
+          <img src="./Images/Logo.png" alt="Shaheen's Logo">
+        </figure></li>  <!-- Social media links -->
+    <li><a href="https://facebook.com">Facebook</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+    <li><a href="https://instagram.com">Instagram</a></li>
+  </ul>
+</footer>
+</body>
+</html>

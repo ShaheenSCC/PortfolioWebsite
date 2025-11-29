@@ -1,0 +1,246 @@
+/* 
+Table of Contents
+1. Global Styles
+2. Layout Styles (Body, Main, Section)
+3. Typography (Headings)
+4. Navigation Styles (nav, nav ul, nav li, nav img)
+5. Footer Styles (footer ul, footer li, footer img)
+6. Images (section figure img, aside img)
+7. Form Styles (form, .form_row, label, input, buttons)
+8. Links (a, a:hover)
+9. Aside Styles
+10. Responsive Styles (@media)
+*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+
+/* 1. Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: lightpink;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Layout Styles */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+}
+
+section {
+    flex: 0 0 48%;
+    background-color: grey;
+    padding: 1em;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* 3. Typography */
+h1, h2 {
+    text-align: center;
+}
+
+/* 4. Navigation Styles */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: grey;
+    height: 2.5em;
+}
+
+nav ul li {
+    width: 20%;
+    text-align: center;
+}
+
+nav img {
+    max-height: 40px;
+}
+
+/* 5. Footer Styles */
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: grey;
+    height: auto;
+}
+
+footer ul li {
+    width: 25%;
+    text-align: center;
+    align-content: center;
+}
+
+footer img {
+    max-height: 40px;
+}
+
+/* 6. Images */
+section figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0.2em pink solid;
+}
+
+figure p {
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 7. Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form_row {
+    display: flex;
+    margin-bottom: 0.3em;
+}
+
+.form_row label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.form_row input {
+    flex: 1;
+}
+
+.button {
+    max-width: 75%;
+    margin-left: 6.9em;
+}
+
+/* 8. Links */
+a {
+    display: block;
+    text-decoration: none;
+    color: pink;
+    height: 100%;
+    align-content: center;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* 9. Aside Styles */
+aside {
+    width: 500px;
+}
+
+/* 10. Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        height: 8.3em;
+    }
+
+    nav ul li {
+        width: 100%;
+        border: pink dashed;
+    }
+
+    a:hover {
+        background-color: blue;
+        color: pink;
+    }
+
+    main, aside {
+        margin: 20px 10px;
+    }
+
+    section {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.logo img {
+    height: 45px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00aaff;
+}
+
+
+/* CARD SECTIONS */
+section.card {
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+section.card h2 {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+
+#pushme {
+    margin-left: 10em;
+    width: 100%;
+}
