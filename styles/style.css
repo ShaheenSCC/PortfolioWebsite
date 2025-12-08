@@ -244,3 +244,13 @@ section.card h2 {
     margin-left: 10em;
     width: 100%;
 }
+
+.profile img {
+    width: 100%;       
+    max-width: 250px;  
+    height: auto;      
+}
+figure {
+    text-align: center;      
+    margin: 1em 0;           
+}
